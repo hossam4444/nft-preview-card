@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Outfit Font -->
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div class="card">
+      <div class="image"><img src="images/image-equilibrium.jpg" alt=""><i class="fas fa-eye"></i></div>
+      <div class="content">
+        <h2>Equilibrium #3429</h2>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="info">
+          <div class="price">
+            <img src="images/icon-ethereum.svg" alt="">
+            <span>0.041 ETH</span>
+          </div>
+          <div class="time">
+            <img src="images/icon-clock.svg" alt="">
+            <span>3 days left</span>
+          </div>
+        </div>
+        <hr>
+        <div class="creator">
+          <img src="images/image-avatar.png" alt="">
+          <div class="text">Creation of <span>Jules Wyvern</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded With <span style="color: red;"> &#10084; </span> by <a href="#"> Hossam Tarek</a>.
+    </div>
   </div>
 </body>
+
 </html>
